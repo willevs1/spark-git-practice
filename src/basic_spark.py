@@ -10,4 +10,6 @@ df.show()
 
 df.groupBy("dept").agg(avg("salary").alias("avg_salary")).show()
 
+change = 1 
+
 spark.stop()
