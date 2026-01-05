@@ -12,6 +12,8 @@ df = spark.read.option("header", True).option("inferSchema", True) \
 
 df.show()
 
+chicken = 1
+
 df.groupBy("dept").agg(avg("salary").alias("avg_salary")).show()
 
 spark.stop()
